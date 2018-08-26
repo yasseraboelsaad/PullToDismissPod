@@ -1,0 +1,23 @@
+{
+  "name": "PullToDismissPod",
+  "version": "0.1.0",
+  "summary": "A ViewController that can be dismissed by dragging the screen like the new mail View in the native mail App.",
+  "description": "A ViewController that can be dismissed by dragging the screen like the new mail View in the native mail App. It also has a dark transparent background that clears up as the ViewController is being dismissed",
+  "homepage": "https://github.com/yasseraboelsaad/PullToDismissPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yasseraboelsaad": "yasser.aboelsaad@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/yasseraboelsaad/PullToDismissPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_version": "4.2",
+  "source_files": "PullToDismissPod/Classes/**/*"
+}

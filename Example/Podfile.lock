@@ -1,0 +1,16 @@
+PODS:
+  - PullToDismissPod (0.1.0)
+
+DEPENDENCIES:
+  - PullToDismissPod (from `../`)
+
+EXTERNAL SOURCES:
+  PullToDismissPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PullToDismissPod: 145ff4d646ed145313d62ae8373fad29a9967bdd
+
+PODFILE CHECKSUM: e05c3161504ee1af046b6377eb4d225c88942b26
+
+COCOAPODS: 1.5.3
