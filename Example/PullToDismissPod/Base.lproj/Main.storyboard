@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,40 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klT-Yk-hGe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ja-Kh-r3c">
+                                        <rect key="frame" x="24" y="64" width="327" height="603"/>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.67450980390000004" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9ja-Kh-r3c" firstAttribute="leading" secondItem="klT-Yk-hGe" secondAttribute="leading" constant="24" id="fCO-gf-ptB"/>
+                                    <constraint firstAttribute="bottom" secondItem="9ja-Kh-r3c" secondAttribute="bottom" id="itg-WS-Xs9"/>
+                                    <constraint firstAttribute="trailing" secondItem="9ja-Kh-r3c" secondAttribute="trailing" constant="24" id="prL-Uu-ifL"/>
+                                    <constraint firstItem="9ja-Kh-r3c" firstAttribute="top" secondItem="klT-Yk-hGe" secondAttribute="top" constant="64" id="z6j-93-AmN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="klT-Yk-hGe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="5IR-bu-Ee5"/>
+                            <constraint firstAttribute="trailing" secondItem="klT-Yk-hGe" secondAttribute="trailing" id="Sz4-9u-GeL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="klT-Yk-hGe" secondAttribute="bottom" id="ohO-YW-vbU"/>
+                            <constraint firstItem="klT-Yk-hGe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="uUy-Wb-DdB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="9ja-Kh-r3c" id="fIb-v3-5Hh"/>
+                        <outlet property="fadingBackgroundView" destination="klT-Yk-hGe" id="qrx-sd-wrv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>
