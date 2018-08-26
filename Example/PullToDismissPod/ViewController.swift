@@ -9,7 +9,7 @@
 import UIKit
 import PullToDismissPod
 
-class ViewController: UIViewController {
+class ViewController: PullToDismissViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
